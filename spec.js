@@ -78,7 +78,7 @@ describe('AWS Pricing Calculator', function() {
 
         element(by.id('aws_calc_ext_summary_choose_url_action')).click();
 
-        browser.driver.sleep(5000);
+        browser.driver.sleep(15000);
 
         expect(element(by.id('aws_calc_ext_summary_total_instances')).getText()).toEqual("9");
         expect(element(by.id('aws_calc_ext_summary_total_storage')).getText()).toEqual("18609 GB");
