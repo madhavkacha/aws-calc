@@ -8,13 +8,15 @@
 
 1. Download one of the excel sheets
 
-2. Fill in your data. Value Helps should show you all supported configurations. You can either specify EC2, Storage or both!
+2. Fill in your data. Value Helps should show you all supported configurations:
    - EC2
    - EC2 Dedicated Hosts (*.metal)
    - EBS
    - S3 / S3 IA
    - EFS
    - FSX for Windows
+
+You can either specify EC2, Storage or both!
 
 <br/>
 
