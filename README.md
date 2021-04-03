@@ -28,8 +28,8 @@
 | OS | As per Value Help | Linux |
 | Pricing Strategy | As per Value Help | 3 Yr All Upfront Reserved |
 | Storage Type | As per Value Help | General Purpose SSD (gp2) |
-| Storage amount per Instance | In GB | 100 |
-| EBS IOPS per Instance | EBS gp3, io1 io2 only | 5000 |
+| Storage amount per Instance | In GB, per Instance (!) | 100 |
+| EBS IOPS per Instance | EBS gp3, io1, io2 only | 5000 |
 | EBS Snapshot amount per Instance | EBS only, in GB/month | 500 |
 | EBS Throughput per Instance (Optional) | EBS gp3 only, in MB/s | 250 |
 | AWS Region (Optional) | In case a single service should be provided from another region (e.g. DR) | eu-central-1 |
