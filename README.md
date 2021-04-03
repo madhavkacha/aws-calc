@@ -20,7 +20,7 @@
 <br/>
 
 | Column | Description | Example |
-| -------------- | :--------- | :--------- |
+| :-------------- | :--------- | :--------- |
 | Group - Description | Builds the hierarchy and adds a service description | Production - Database|
 | # Instances / Quantity | Amount of instances or volumes | 1 |
 | Assumed Usage | Scheduled only (Hours per Week) | 40 |
