@@ -2,20 +2,19 @@
 
 [![Build Status](https://travis-ci.com/frumania/aws-pricing-calculator-scripts-test.svg?branch=main)](https://travis-ci.com/frumania/aws-pricing-calculator-scripts-test)
 
-## Step by Step Guide
+## Step-by-Step Guide
 
 ### Importer
 
 1. Download one of the excel sheets
 
 2. Fill in your data. Value Helps should show you all supported configurations. You can either specify EC2, Storage or both!
-
-- EC2
-- EC2 Dedicated Hosts (*.metal)
-- EBS
-- S3 / S3 IA
-- EFS
-- FSX for Windows
+   - EC2
+   - EC2 Dedicated Hosts (*.metal)
+   - EBS
+   - S3 / S3 IA
+   - EFS
+   - FSX for Windows
 
 <br/>
 
