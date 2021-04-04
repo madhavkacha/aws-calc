@@ -40,7 +40,7 @@ You can either specify EC2, Storage or both!
 
 **Note:** Regardless of if you specify storage for an instance directly, the calulation is always split between EC2 and storage to highlight individual costs.
 
-[![Watch the video](preview.gif)](preview.mp4)
+[![Watch the video](preview.gif)](https://github.com/frumania/aws-pricing-calculator-scripts-test/blob/main/preview.mp4?raw=true)
 
 ### Exporter
 
