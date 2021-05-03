@@ -1,1150 +1,813 @@
 {
-   "name": "E2ETest",
-   "services": {},
-   "groups": {
-       "Myservicegroup-6c96d8bc-d68f-48e4-8273-3714040ad6c9": {
-           "name": "PROD",
-           "services": {
-               "amazonElasticBlockStore-f774fd57-6e13-47e1-949e-02ad4ac2cbfa": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "consistent"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "reserved"
-                       },
-                       "instanceType": {
-                           "value": "x1.16xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "consistent",
-                               "data": "2"
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "3 Year",
-                               "model": "convertible",
-                               "upfrontPayment": "Full"
-                           }
-                       },
-                       "gp3Iops": {
-                           "value": "3000"
-                       },
-                       "gp3Throughput": {
-                           "value": "500",
-                           "unit": "mbps"
-                       },
-                       "storageType": {
-                           "value": "Storage General Purpose gp3 GB Mo"
-                       },
-                       "snapshotFrequency": {
-                           "value": "1"
-                       },
-                       "snapshotAmount": {
-                           "value": "5000",
-                           "unit": "gb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "2"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "2924",
-                           "unit": "gb|NA"
-                       }
-                   },
-                   "serviceCode": "amazonElasticBlockStore",
-                   "region": "eu-central-1",
-                   "estimateFor": "elasticBlockStore",
-                   "version": "0.0.59",
-                   "description": "(1) (EBS) PR1 SAP HANA 2.0",
-                   "serviceCost": {
-                       "monthly": 1178.59
-                   }
-               },
-               "eC2Next-b6431f60-5da0-4ca8-a72e-e8aa21913b9b": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "consistent"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "reserved"
-                       },
-                       "instanceType": {
-                           "value": "x1.16xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "consistent",
-                               "data": "2"
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "3 Year",
-                               "model": "convertible",
-                               "upfrontPayment": "Full"
-                           }
-                       },
-                       "gp3Iops": {
-                           "value": "3000"
-                       },
-                       "gp3Throughput": {
-                           "value": "500",
-                           "unit": "mbps"
-                       },
-                       "storageType": {
-                           "value": "General Purpose"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "2"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       }
-                   },
-                   "serviceCode": "eC2Next",
-                   "region": "eu-central-1",
-                   "estimateFor": "advanceEstimate",
-                   "version": "0.0.59",
-                   "description": "(1) (EC2) PR1 SAP HANA 2.0",
-                   "serviceCost": {
-                       "monthly": 36.07,
-                       "upfront": 166004
-                   }
-               },
-               "amazonElasticBlockStore-6f3539fb-7eba-4ea8-9b72-3590187301a0": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "consistent"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "instance-savings"
-                       },
-                       "instanceType": {
-                           "value": "m5.4xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "consistent",
-                               "data": "3"
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "3 Year",
-                               "model": "instanceSavings",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "iops2": {
-                           "value": "3000"
-                       },
-                       "storageType": {
-                           "value": "Storage Provisioned IOPS io2 GB month"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "3"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "200",
-                           "unit": "gb|NA"
-                       }
-                   },
-                   "serviceCode": "amazonElasticBlockStore",
-                   "region": "eu-central-1",
-                   "estimateFor": "elasticBlockStore",
-                   "version": "0.0.59",
-                   "description": "(4) (EBS) PR1 SAP PAS+AAS (S4)",
-                   "serviceCost": {
-                       "monthly": 791.4
-                   }
-               },
-               "eC2Next-e58acf63-6e9c-46b9-906b-4b53b08e7b5a": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "consistent"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "instance-savings"
-                       },
-                       "instanceType": {
-                           "value": "m5.4xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "consistent",
-                               "data": "3"
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "3 Year",
-                               "model": "instanceSavings",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "iops2": {
-                           "value": "3000"
-                       },
-                       "storageType": {
-                           "value": "General Purpose"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "3"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "iops": {}
-                   },
-                   "serviceCode": "eC2Next",
-                   "region": "eu-central-1",
-                   "estimateFor": "advanceEstimate",
-                   "version": "0.0.59",
-                   "description": "(4) (EC2) PR1 SAP PAS+AAS (S4)",
-                   "serviceCost": {
-                       "monthly": 1790.43,
-                       "upfront": 0
-                   }
-               }
-           },
-           "groups": {},
-           "groupSubtotal": {
-               "monthly": 3796.49,
-               "upfront": 166004
-           }
-       },
-       "Myservicegroup-0c9b772f-0b62-4c0d-9048-332442b873fb": {
-           "name": "QAS",
-           "services": {
-               "amazonElasticBlockStore-acd3dcba-1299-4cc1-9a86-124a473dc027": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "consistent"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "reserved"
-                       },
-                       "instanceType": {
-                           "value": "x1.16xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "consistent",
-                               "data": "1"
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "3 Year",
-                               "model": "convertible",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "storageType": {
-                           "value": "Storage General Purpose GB Mo"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "1"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "2924",
-                           "unit": "gb|NA"
-                       }
-                   },
-                   "serviceCode": "amazonElasticBlockStore",
-                   "region": "eu-central-1",
-                   "estimateFor": "elasticBlockStore",
-                   "version": "0.0.59",
-                   "description": "(2) (EBS) QR1 SAP HANA 2.0",
-                   "serviceCost": {
-                       "monthly": 347.96
-                   }
-               },
-               "eC2Next-815c291c-d204-438b-aa30-60eb61799ee3": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "consistent"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "reserved"
-                       },
-                       "instanceType": {
-                           "value": "x1.16xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "consistent",
-                               "data": "1"
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "3 Year",
-                               "model": "convertible",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "storageType": {
-                           "value": "General Purpose"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "1"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       }
-                   },
-                   "serviceCode": "eC2Next",
-                   "region": "eu-central-1",
-                   "estimateFor": "advanceEstimate",
-                   "version": "0.0.59",
-                   "description": "(2) (EC2) QR1 SAP HANA 2.0",
-                   "serviceCost": {
-                       "monthly": 2544.05,
-                       "upfront": 0
-                   }
-               },
-               "amazonElasticBlockStore-bb5385e8-37be-4c02-9978-33a402e66077": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "consistent"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "reserved"
-                       },
-                       "instanceType": {
-                           "value": "m5.2xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "consistent",
-                               "data": "1"
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "3 Year",
-                               "model": "standard",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "storageType": {
-                           "value": "Storage General Purpose GB Mo"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "1"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "200",
-                           "unit": "gb|NA"
-                       }
-                   },
-                   "serviceCode": "amazonElasticBlockStore",
-                   "region": "eu-central-1",
-                   "estimateFor": "elasticBlockStore",
-                   "version": "0.0.59",
-                   "description": "(5) (EBS) QR1 SAP PAS (S4)",
-                   "serviceCost": {
-                       "monthly": 23.8
-                   }
-               },
-               "eC2Next-d5d84975-ad9e-4fe9-b2cf-096c292bdec5": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "consistent"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "reserved"
-                       },
-                       "instanceType": {
-                           "value": "m5.2xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "consistent",
-                               "data": "1"
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "3 Year",
-                               "model": "standard",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "storageType": {
-                           "value": "General Purpose"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "1"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       }
-                   },
-                   "serviceCode": "eC2Next",
-                   "region": "eu-central-1",
-                   "estimateFor": "advanceEstimate",
-                   "version": "0.0.59",
-                   "description": "(5) (EC2) QR1 SAP PAS (S4)",
-                   "serviceCost": {
-                       "monthly": 169.36,
-                       "upfront": 0
-                   }
-               }
-           },
-           "groups": {},
-           "groupSubtotal": {
-               "monthly": 3085.1700000000005,
-               "upfront": 0
-           }
-       },
-       "Myservicegroup-9ec13844-aef9-48f6-9fe4-5eb342249cf0": {
-           "name": "DEV",
-           "services": {
-               "amazonElasticBlockStore-f98bdb46-8568-4621-9aba-2aa6f209424c": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "daily"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "on-demand"
-                       },
-                       "instanceType": {
-                           "value": "x1e.4xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "daily",
-                               "data": [
-                                   {
-                                       "id": "e155b7dd-1988-47dc-a942-956c2e8e2b82",
-                                       "baseline": "0",
-                                       "peak": "1",
-                                       "hours": "8.0",
-                                       "minutes": "0",
-                                       "days": [
-                                           "Monday",
-                                           "Tuesday",
-                                           "Wednesday",
-                                           "Thursday",
-                                           "Friday"
-                                       ]
-                                   }
-                               ],
-                               "selectedDays": [
-                                   "Monday",
-                                   "Tuesday",
-                                   "Wednesday",
-                                   "Thursday",
-                                   "Friday"
-                               ]
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "1 Year",
-                               "model": "ondemand",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "storageType": {
-                           "value": "Storage General Purpose GB Mo"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "1"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "1637",
-                           "unit": "gb|NA"
-                       }
-                   },
-                   "serviceCode": "amazonElasticBlockStore",
-                   "region": "eu-central-1",
-                   "estimateFor": "elasticBlockStore",
-                   "version": "0.0.59",
-                   "description": "(3) (EBS) DR1 SAP HANA 2.0",
-                   "serviceCost": {
-                       "monthly": 194.8
-                   }
-               },
-               "eC2Next-3ef116f1-8a9d-4172-bd22-0f98114edfc8": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "daily"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "on-demand"
-                       },
-                       "instanceType": {
-                           "value": "x1e.4xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "daily",
-                               "data": [
-                                   {
-                                       "id": "e155b7dd-1988-47dc-a942-956c2e8e2b82",
-                                       "baseline": "0",
-                                       "peak": "1",
-                                       "hours": "8.0",
-                                       "minutes": "0",
-                                       "days": [
-                                           "Monday",
-                                           "Tuesday",
-                                           "Wednesday",
-                                           "Thursday",
-                                           "Friday"
-                                       ]
-                                   }
-                               ],
-                               "selectedDays": [
-                                   "Monday",
-                                   "Tuesday",
-                                   "Wednesday",
-                                   "Thursday",
-                                   "Friday"
-                               ]
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "1 Year",
-                               "model": "ondemand",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "storageType": {
-                           "value": "General Purpose"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "1"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       }
-                   },
-                   "serviceCode": "eC2Next",
-                   "region": "eu-central-1",
-                   "estimateFor": "advanceEstimate",
-                   "version": "0.0.59",
-                   "description": "(3) (EC2) DR1 SAP HANA 2.0",
-                   "serviceCost": {
-                       "monthly": 828.72,
-                       "upfront": 0
-                   }
-               },
-               "amazonElasticBlockStore-703b27d9-e417-4482-b50d-64de9753d21c": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "daily"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "on-demand"
-                       },
-                       "instanceType": {
-                           "value": "m5.2xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "daily",
-                               "data": [
-                                   {
-                                       "id": "4020be63-7a2a-4205-a767-7bdb2c0436fd",
-                                       "baseline": "0",
-                                       "peak": "1",
-                                       "hours": "8.0",
-                                       "minutes": "0",
-                                       "days": [
-                                           "Monday",
-                                           "Tuesday",
-                                           "Wednesday",
-                                           "Thursday",
-                                           "Friday"
-                                       ]
-                                   }
-                               ],
-                               "selectedDays": [
-                                   "Monday",
-                                   "Tuesday",
-                                   "Wednesday",
-                                   "Thursday",
-                                   "Friday"
-                               ]
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "1 Year",
-                               "model": "ondemand",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "storageType": {
-                           "value": "Storage General Purpose GB Mo"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "1"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "200",
-                           "unit": "gb|NA"
-                       }
-                   },
-                   "serviceCode": "amazonElasticBlockStore",
-                   "region": "eu-central-1",
-                   "estimateFor": "elasticBlockStore",
-                   "version": "0.0.59",
-                   "description": "(6) (EBS) DR1 SAP PAS (S4)",
-                   "serviceCost": {
-                       "monthly": 23.8
-                   }
-               },
-               "eC2Next-6fa87bd6-b715-4844-a549-ef92220b485f": {
-                   "calculationComponents": {
-                       "selectedOS": {
-                           "value": "suse"
-                       },
-                       "workloadSelection": {
-                           "value": "daily"
-                       },
-                       "pricingStrategySelection": {
-                           "value": "on-demand"
-                       },
-                       "instanceType": {
-                           "value": "m5.2xlarge"
-                       },
-                       "workload": {
-                           "value": {
-                               "workloadType": "daily",
-                               "data": [
-                                   {
-                                       "id": "4020be63-7a2a-4205-a767-7bdb2c0436fd",
-                                       "baseline": "0",
-                                       "peak": "1",
-                                       "hours": "8.0",
-                                       "minutes": "0",
-                                       "days": [
-                                           "Monday",
-                                           "Tuesday",
-                                           "Wednesday",
-                                           "Thursday",
-                                           "Friday"
-                                       ]
-                                   }
-                               ],
-                               "selectedDays": [
-                                   "Monday",
-                                   "Tuesday",
-                                   "Wednesday",
-                                   "Thursday",
-                                   "Friday"
-                               ]
-                           }
-                       },
-                       "dataTransferForEC2": {
-                           "value": [
-                               {
-                                   "entryType": "INBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "fromRegion": ""
-                               },
-                               {
-                                   "entryType": "OUTBOUND",
-                                   "value": "",
-                                   "unit": "tb_month",
-                                   "toRegion": ""
-                               },
-                               {
-                                   "entryType": "INTRA_REGION",
-                                   "value": "",
-                                   "unit": "tb_month"
-                               }
-                           ]
-                       },
-                       "pricingStrategy": {
-                           "value": {
-                               "term": "1 Year",
-                               "model": "ondemand",
-                               "upfrontPayment": "None"
-                           }
-                       },
-                       "storageType": {
-                           "value": "General Purpose"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "1"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       }
-                   },
-                   "serviceCode": "eC2Next",
-                   "region": "eu-central-1",
-                   "estimateFor": "advanceEstimate",
-                   "version": "0.0.59",
-                   "description": "(6) (EC2) DR1 SAP PAS (S4)",
-                   "serviceCost": {
-                       "monthly": 97.33,
-                       "upfront": 0
-                   }
-               }
-           },
-           "groups": {},
-           "groupSubtotal": {
-               "monthly": 1144.6499999999999,
-               "upfront": 0
-           }
-       },
-       "Myservicegroup-f452d20f-541c-4628-88f3-8a89c87943c2": {
-           "name": "ALL BACKUP",
-           "services": {
-               "amazonElasticBlockStore-a482fabb-b7bb-47d5-8f31-e1fe6d6e021f": {
-                   "calculationComponents": {
-                       "storageType": {
-                           "value": "Storage Throughput Optimized HDD GB Mo"
-                       },
-                       "snapshotFrequency": {
-                           "value": "0"
-                       },
-                       "snapshotAmount": {
-                           "value": "1",
-                           "unit": "mb|NA"
-                       },
-                       "numberOfInstances": {
-                           "value": "72"
-                       },
-                       "durationOfInstanceRuns": {
-                           "value": "730",
-                           "unit": "hours"
-                       },
-                       "storageAmount": {
-                           "value": "100",
-                           "unit": "gb|NA"
-                       }
-                   },
-                   "serviceCode": "amazonElasticBlockStore",
-                   "region": "eu-central-1",
-                   "estimateFor": "elasticBlockStore",
-                   "version": "0.0.59",
-                   "description": "(7) (EBS) ",
-                   "serviceCost": {
-                       "monthly": 388.8
-                   }
-               }
-           },
-           "groups": {},
-           "groupSubtotal": {
-               "monthly": 388.8
-           }
-       }
-   },
-   "groupSubtotal": {},
-   "support": {},
-   "metaData": {
-       "locale": "en_US",
-       "currency": "USD",
-       "createdOn": "2021-02-16T21:04:52.481Z",
-       "source": "calculator-platform",
-       "estimateId": "86d61f99be8d7022d2272f01e677586c78908a75"
-   }
+  "name": "Test",
+  "services": {},
+  "groups": {
+    "Myservicegroup-ca3fd7d2-eb28-4746-8eb3-a8af4ec41499": {
+      "name": "PROD",
+      "services": {
+        "amazonElasticBlockStore-5cca9c95-f3e3-4800-bee5-f0969e4ee4c2": {
+          "calculationComponents": {
+            "gp3Iops": {
+              "value": "5000"
+            },
+            "gp3Throughput": {
+              "value": "500",
+              "unit": "mbps"
+            },
+            "numberOfInstances": {
+              "value": "2"
+            },
+            "durationOfInstanceRuns": {
+              "value": "730",
+              "unit": "hours"
+            },
+            "storageType": {
+              "value": "Storage General Purpose gp3 GB Mo"
+            },
+            "storageAmount": {
+              "value": "2924",
+              "unit": "gb|NA"
+            },
+            "snapshotFrequency": {
+              "value": "1"
+            },
+            "snapshotAmount": {
+              "value": "3000",
+              "unit": "gb|NA"
+            }
+          },
+          "serviceCode": "amazonElasticBlockStore",
+          "region": "eu-central-1",
+          "estimateFor": "elasticBlockStore",
+          "version": "0.0.74",
+          "description": "#1# PR1 SAP HANA 2.0",
+          "serviceCost": {
+            "monthly": 1094.59
+          }
+        },
+        "amazonEc2DedicatedHosts-c81d642e-c6a9-48c7-9afa-97dc06a5c232": {
+          "calculationComponents": {
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "storageAmount": {
+              "value": "0",
+              "unit": "mb|NA"
+            },
+            "columnFormIPM": {
+              "value": [
+                {
+                  "Number of Hosts": {
+                    "value": "2"
+                  },
+                  "Instance Type": {
+                    "value": "u-6tb1"
+                  },
+                  "TermType": {
+                    "value": "Reserved"
+                  },
+                  "plc:LeaseContractLength": {
+                    "value": "3 year"
+                  },
+                  "plc:PurchaseOption": {
+                    "value": "All Upfront"
+                  }
+                }
+              ]
+            }
+          },
+          "serviceCode": "amazonEc2DedicatedHosts",
+          "region": "eu-central-1",
+          "estimateFor": "ec2dedicatedHost",
+          "version": "0.0.32",
+          "description": "#1# PR1 SAP HANA 2.0",
+          "serviceCost": {
+            "monthly": 0,
+            "upfront": 963100
+          }
+        },
+        "amazonElasticBlockStore-fdabb1cc-cb13-467e-b6c5-cec5cdf0cbdf": {
+          "calculationComponents": {
+            "iops2": {
+              "value": "10000"
+            },
+            "numberOfInstances": {
+              "value": "3"
+            },
+            "durationOfInstanceRuns": {
+              "value": "730",
+              "unit": "hours"
+            },
+            "storageType": {
+              "value": "Storage Provisioned IOPS io2 GB month"
+            },
+            "storageAmount": {
+              "value": "200",
+              "unit": "gb|NA"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            },
+            "snapshotAmount": {
+              "value": "0",
+              "unit": "gb|NA"
+            }
+          },
+          "serviceCode": "amazonElasticBlockStore",
+          "region": "eu-central-1",
+          "estimateFor": "elasticBlockStore",
+          "version": "0.0.74",
+          "description": "#4# PR1 SAP PAS+AAS (S4)",
+          "serviceCost": {
+            "monthly": 2429.4
+          }
+        },
+        "eC2Next-5320c655-def7-4f9b-b6df-0397a6797b29": {
+          "calculationComponents": {
+            "selectedOS": {
+              "value": "suse"
+            },
+            "workloadSelection": {
+              "value": "consistent"
+            },
+            "pricingStrategySelection": {
+              "value": "instance-savings"
+            },
+            "instanceType": {
+              "value": "m5.4xlarge"
+            },
+            "workload": {
+              "value": {
+                "workloadType": "consistent",
+                "data": "3"
+              }
+            },
+            "dataTransferForEC2": {
+              "value": [
+                {
+                  "entryType": "INBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "fromRegion": ""
+                },
+                {
+                  "entryType": "OUTBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "toRegion": ""
+                },
+                {
+                  "entryType": "INTRA_REGION",
+                  "value": "",
+                  "unit": "tb_month"
+                }
+              ]
+            },
+            "pricingStrategy": {
+              "value": {
+                "term": "3 Year",
+                "model": "instanceSavings",
+                "upfrontPayment": "None"
+              }
+            },
+            "storageAmount": {
+              "value": "0",
+              "unit": "mb|NA"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            }
+          },
+          "serviceCode": "eC2Next",
+          "region": "eu-central-1",
+          "estimateFor": "advanceEstimate",
+          "version": "0.0.59",
+          "description": "#4# PR1 SAP PAS+AAS (S4)",
+          "serviceCost": {
+            "monthly": 1088.43,
+            "upfront": 0
+          }
+        }
+      },
+      "groups": {},
+      "groupSubtotal": {
+        "monthly": 4612.42,
+        "upfront": 963100
+      }
+    },
+    "Myservicegroup-9687e78b-d57b-4cd6-8218-2e0cfafe5dfc": {
+      "name": "QAS",
+      "services": {
+        "amazonElasticBlockStore-0192ddb1-63ab-4899-a30c-7485c2a6dba9": {
+          "calculationComponents": {
+            "numberOfInstances": {
+              "value": "1"
+            },
+            "durationOfInstanceRuns": {
+              "value": "730",
+              "unit": "hours"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "storageAmount": {
+              "value": "2924",
+              "unit": "gb|NA"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            },
+            "snapshotAmount": {
+              "value": "0",
+              "unit": "gb|NA"
+            }
+          },
+          "serviceCode": "amazonElasticBlockStore",
+          "region": "eu-central-1",
+          "estimateFor": "elasticBlockStore",
+          "version": "0.0.74",
+          "description": "#2# QR1 SAP HANA 2.0",
+          "serviceCost": {
+            "monthly": 347.96
+          }
+        },
+        "eC2Next-7a838a5a-4794-4458-bb3c-b462ee603f40": {
+          "calculationComponents": {
+            "selectedOS": {
+              "value": "suse"
+            },
+            "workloadSelection": {
+              "value": "consistent"
+            },
+            "pricingStrategySelection": {
+              "value": "reserved"
+            },
+            "instanceType": {
+              "value": "x1.16xlarge"
+            },
+            "workload": {
+              "value": {
+                "workloadType": "consistent",
+                "data": "1"
+              }
+            },
+            "dataTransferForEC2": {
+              "value": [
+                {
+                  "entryType": "INBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "fromRegion": ""
+                },
+                {
+                  "entryType": "OUTBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "toRegion": ""
+                },
+                {
+                  "entryType": "INTRA_REGION",
+                  "value": "",
+                  "unit": "tb_month"
+                }
+              ]
+            },
+            "pricingStrategy": {
+              "value": {
+                "term": "3 Year",
+                "model": "convertible",
+                "upfrontPayment": "None"
+              }
+            },
+            "storageAmount": {
+              "value": "0",
+              "unit": "mb|NA"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            }
+          },
+          "serviceCode": "eC2Next",
+          "region": "eu-central-1",
+          "estimateFor": "advanceEstimate",
+          "version": "0.0.59",
+          "description": "#2# QR1 SAP HANA 2.0",
+          "serviceCost": {
+            "monthly": 2544.05,
+            "upfront": 0
+          }
+        },
+        "amazonElasticBlockStore-96d78ee6-52dc-4011-b373-27b8204f9aed": {
+          "calculationComponents": {
+            "numberOfInstances": {
+              "value": "1"
+            },
+            "durationOfInstanceRuns": {
+              "value": "730",
+              "unit": "hours"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "storageAmount": {
+              "value": "200",
+              "unit": "gb|NA"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            },
+            "snapshotAmount": {
+              "value": "0",
+              "unit": "gb|NA"
+            }
+          },
+          "serviceCode": "amazonElasticBlockStore",
+          "region": "eu-central-1",
+          "estimateFor": "elasticBlockStore",
+          "version": "0.0.74",
+          "description": "#5# QR1 SAP PAS (S4)",
+          "serviceCost": {
+            "monthly": 23.8
+          }
+        },
+        "eC2Next-55afa3e5-d3eb-4e96-9a90-4fd50113e1e9": {
+          "calculationComponents": {
+            "selectedOS": {
+              "value": "suse"
+            },
+            "workloadSelection": {
+              "value": "consistent"
+            },
+            "pricingStrategySelection": {
+              "value": "reserved"
+            },
+            "instanceType": {
+              "value": "m5.2xlarge"
+            },
+            "workload": {
+              "value": {
+                "workloadType": "consistent",
+                "data": "1"
+              }
+            },
+            "dataTransferForEC2": {
+              "value": [
+                {
+                  "entryType": "INBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "fromRegion": ""
+                },
+                {
+                  "entryType": "OUTBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "toRegion": ""
+                },
+                {
+                  "entryType": "INTRA_REGION",
+                  "value": "",
+                  "unit": "tb_month"
+                }
+              ]
+            },
+            "pricingStrategy": {
+              "value": {
+                "term": "3 Year",
+                "model": "standard",
+                "upfrontPayment": "None"
+              }
+            },
+            "storageAmount": {
+              "value": "0",
+              "unit": "mb|NA"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            }
+          },
+          "serviceCode": "eC2Next",
+          "region": "eu-central-1",
+          "estimateFor": "advanceEstimate",
+          "version": "0.0.59",
+          "description": "#5# QR1 SAP PAS (S4)",
+          "serviceCost": {
+            "monthly": 169.36,
+            "upfront": 0
+          }
+        }
+      },
+      "groups": {},
+      "groupSubtotal": {
+        "monthly": 3085.1700000000005,
+        "upfront": 0
+      }
+    },
+    "Myservicegroup-175764e9-b52d-4d2e-9efb-fb06a0f3be92": {
+      "name": "DEV",
+      "services": {
+        "amazonElasticBlockStore-ddfbd172-f31a-4416-8784-e50ef8f3ac83": {
+          "calculationComponents": {
+            "numberOfInstances": {
+              "value": "1"
+            },
+            "durationOfInstanceRuns": {
+              "value": "730",
+              "unit": "hours"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "storageAmount": {
+              "value": "1637",
+              "unit": "gb|NA"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            },
+            "snapshotAmount": {
+              "value": "0",
+              "unit": "gb|NA"
+            }
+          },
+          "serviceCode": "amazonElasticBlockStore",
+          "region": "eu-central-1",
+          "estimateFor": "elasticBlockStore",
+          "version": "0.0.74",
+          "description": "#3# DR1 SAP HANA 2.0",
+          "serviceCost": {
+            "monthly": 194.8
+          }
+        },
+        "eC2Next-57d96be7-25f9-46a1-a041-aef0787001d2": {
+          "calculationComponents": {
+            "selectedOS": {
+              "value": "suse"
+            },
+            "workloadSelection": {
+              "value": "daily"
+            },
+            "pricingStrategySelection": {
+              "value": "on-demand"
+            },
+            "instanceType": {
+              "value": "x1e.4xlarge"
+            },
+            "workload": {
+              "value": {
+                "workloadType": "daily",
+                "data": [
+                  {
+                    "id": "97225845-fc21-4298-96b4-056aebacabe3",
+                    "baseline": "0",
+                    "peak": "1",
+                    "hours": "8.0",
+                    "minutes": "0",
+                    "days": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday"
+                    ]
+                  }
+                ],
+                "selectedDays": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ]
+              }
+            },
+            "dataTransferForEC2": {
+              "value": [
+                {
+                  "entryType": "INBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "fromRegion": ""
+                },
+                {
+                  "entryType": "OUTBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "toRegion": ""
+                },
+                {
+                  "entryType": "INTRA_REGION",
+                  "value": "",
+                  "unit": "tb_month"
+                }
+              ]
+            },
+            "pricingStrategy": {
+              "value": {
+                "term": "1 Year",
+                "model": "ondemand",
+                "upfrontPayment": "None"
+              }
+            },
+            "storageAmount": {
+              "value": "0",
+              "unit": "mb|NA"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            }
+          },
+          "serviceCode": "eC2Next",
+          "region": "eu-central-1",
+          "estimateFor": "advanceEstimate",
+          "version": "0.0.59",
+          "description": "#3# DR1 SAP HANA 2.0",
+          "serviceCost": {
+            "monthly": 828.72,
+            "upfront": 0
+          }
+        },
+        "amazonElasticBlockStore-772738a6-aa1e-4a1c-8b37-1d4cddce676f": {
+          "calculationComponents": {
+            "numberOfInstances": {
+              "value": "1"
+            },
+            "durationOfInstanceRuns": {
+              "value": "730",
+              "unit": "hours"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "storageAmount": {
+              "value": "200",
+              "unit": "gb|NA"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            },
+            "snapshotAmount": {
+              "value": "0",
+              "unit": "gb|NA"
+            }
+          },
+          "serviceCode": "amazonElasticBlockStore",
+          "region": "eu-central-1",
+          "estimateFor": "elasticBlockStore",
+          "version": "0.0.74",
+          "description": "#6# DR1 SAP PAS (S4)",
+          "serviceCost": {
+            "monthly": 23.8
+          }
+        },
+        "eC2Next-0e5bf30d-d797-4016-82bf-2d26f5b8cc88": {
+          "calculationComponents": {
+            "selectedOS": {
+              "value": "suse"
+            },
+            "workloadSelection": {
+              "value": "daily"
+            },
+            "pricingStrategySelection": {
+              "value": "on-demand"
+            },
+            "instanceType": {
+              "value": "m5.2xlarge"
+            },
+            "workload": {
+              "value": {
+                "workloadType": "daily",
+                "data": [
+                  {
+                    "id": "9eed6991-0984-4349-8959-3f4c2e899327",
+                    "baseline": "0",
+                    "peak": "1",
+                    "hours": "8.0",
+                    "minutes": "0",
+                    "days": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday"
+                    ]
+                  }
+                ],
+                "selectedDays": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ]
+              }
+            },
+            "dataTransferForEC2": {
+              "value": [
+                {
+                  "entryType": "INBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "fromRegion": ""
+                },
+                {
+                  "entryType": "OUTBOUND",
+                  "value": "",
+                  "unit": "tb_month",
+                  "toRegion": ""
+                },
+                {
+                  "entryType": "INTRA_REGION",
+                  "value": "",
+                  "unit": "tb_month"
+                }
+              ]
+            },
+            "pricingStrategy": {
+              "value": {
+                "term": "1 Year",
+                "model": "ondemand",
+                "upfrontPayment": "None"
+              }
+            },
+            "storageAmount": {
+              "value": "0",
+              "unit": "mb|NA"
+            },
+            "storageType": {
+              "value": "Storage General Purpose GB Mo"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            }
+          },
+          "serviceCode": "eC2Next",
+          "region": "eu-central-1",
+          "estimateFor": "advanceEstimate",
+          "version": "0.0.59",
+          "description": "#6# DR1 SAP PAS (S4)",
+          "serviceCost": {
+            "monthly": 97.33,
+            "upfront": 0
+          }
+        }
+      },
+      "groups": {},
+      "groupSubtotal": {
+        "monthly": 1144.6499999999999,
+        "upfront": 0
+      }
+    },
+    "Myservicegroup-5a2c71c6-8b3b-4f74-b06c-2709bcf333ac": {
+      "name": "ALL BACKUP st1",
+      "services": {
+        "amazonElasticBlockStore-1b58faef-50a7-494f-b4d3-e4d797fa5242": {
+          "calculationComponents": {
+            "numberOfInstances": {
+              "value": "4"
+            },
+            "durationOfInstanceRuns": {
+              "value": "730",
+              "unit": "hours"
+            },
+            "storageType": {
+              "value": "Storage Throughput Optimized HDD GB Mo"
+            },
+            "storageAmount": {
+              "value": "2000",
+              "unit": "gb|NA"
+            },
+            "snapshotFrequency": {
+              "value": "0"
+            },
+            "snapshotAmount": {
+              "value": "0",
+              "unit": "gb|NA"
+            }
+          },
+          "serviceCode": "amazonElasticBlockStore",
+          "region": "eu-central-1",
+          "estimateFor": "elasticBlockStore",
+          "version": "0.0.74",
+          "description": "#7#",
+          "serviceCost": {
+            "monthly": 432
+          }
+        }
+      },
+      "groups": {},
+      "groupSubtotal": {
+        "monthly": 432
+      }
+    },
+    "Myservicegroup-d4636fbe-f9e0-4c88-b3c4-d5830d589a24": {
+      "name": "SHARED",
+      "services": {
+        "amazonEFS-28aeea94-c74b-4d4a-8076-b68cf7761909": {
+          "calculationComponents": {
+            "standardStorageSize": {
+              "value": "2000",
+              "unit": "gb|NA"
+            }
+          },
+          "serviceCode": "amazonEFS",
+          "region": "eu-central-1",
+          "estimateFor": "elasticFileSystem",
+          "version": "0.0.17",
+          "description": "#8#",
+          "serviceCost": {
+            "monthly": 720
+          }
+        }
+      },
+      "groups": {},
+      "groupSubtotal": {
+        "monthly": 720
+      }
+    },
+    "Myservicegroup-36b82ff9-e2f7-4997-a37b-6b6406f5f23a": {
+      "name": "ALL BACKUP S3",
+      "services": {
+        "amazonSimpleStorageServiceGroup-4a345926-6b39-4ff6-bfc3-5054e40436bd": {
+          "serviceCode": "amazonSimpleStorageServiceGroup",
+          "estimateFor": "simpleStorageServiceClassesGroup",
+          "region": "eu-central-1",
+          "description": "#9# Standard",
+          "subServices": [
+            {
+              "calculationComponents": {
+                "s3StandardStorageSize": {
+                  "value": "2000",
+                  "unit": "gb|month"
+                }
+              },
+              "serviceCode": "amazonS3Standard",
+              "region": "eu-central-1",
+              "estimateFor": "s3Standard",
+              "version": "0.0.23",
+              "description": null,
+              "serviceCost": {
+                "monthly": 49
+              }
+            }
+          ],
+          "serviceCost": {
+            "monthly": 49
+          }
+        },
+        "amazonSimpleStorageServiceGroup-7cfcad67-4ad5-46b7-b0c8-fca80a12a5c6": {
+          "serviceCode": "amazonSimpleStorageServiceGroup",
+          "estimateFor": "simpleStorageServiceClassesGroup",
+          "region": "eu-west-1",
+          "description": "#10# IA",
+          "subServices": [
+            {
+              "calculationComponents": {
+                "s3IaStorageSize": {
+                  "value": "1000",
+                  "unit": "gb|month"
+                }
+              },
+              "serviceCode": "amazonS3StandardInfrequentAccess",
+              "region": "eu-west-1",
+              "estimateFor": "s3StandardInfrequentAccess",
+              "version": "0.0.18",
+              "description": null,
+              "serviceCost": {
+                "monthly": 12.5
+              }
+            }
+          ],
+          "serviceCost": {
+            "monthly": 12.5
+          }
+        }
+      },
+      "groups": {},
+      "groupSubtotal": {
+        "monthly": 61.5
+      }
+    }
+  },
+  "groupSubtotal": {},
+  "support": {},
+  "metaData": {
+    "locale": "de_DE",
+    "currency": "USD",
+    "createdOn": "2021-05-03T17:54:43.749Z",
+    "source": "calculator-platform",
+    "estimateId": "cc7c240b6dbc606758a4773fc32137bfcff2b910"
+  }
 }
