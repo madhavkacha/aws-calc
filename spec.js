@@ -36,14 +36,14 @@ describe('AWS Pricing Calculator', function() {
                 {
                   var upfront = parseFloat(text.replace("Total upfront","").replace(" USD","").replace(/,/g,""));
                   console.log(upfront);
-                  expect(upfront).toEqual(166004.00);
+                  expect(upfront).toEqual(963100.00);
                 }
                 
                 if(text.includes("Total monthly"))
                 {
                   var monthly = parseFloat(text.replace("Total monthly","").replace(" USD","").replace(/,/g,""));
                   console.log(monthly);
-                  expect(monthly).toEqual(8415.12);
+                  expect(monthly).toEqual(10055.75);
                 }
               });
 
@@ -81,9 +81,9 @@ describe('AWS Pricing Calculator', function() {
         browser.driver.sleep(15000);
 
         expect(element(by.id('aws_calc_ext_summary_total_instances')).getText()).toEqual("9");
-        expect(element(by.id('aws_calc_ext_summary_total_storage')).getText()).toEqual("18609 GB");
-        expect(element(by.id('aws_calc_ext_summary_total_3yr')).getText()).toEqual("468947.96 USD");
-        expect(element(by.id('aws_calc_ext_summary_total_saps')).getText()).toEqual("303839");
+        expect(element(by.id('aws_calc_ext_summary_total_storage')).getText()).toEqual("19409 GB");
+        expect(element(by.id('aws_calc_ext_summary_total_3yr')).getText()).toEqual("1325106.64 USD");
+        expect(element(by.id('aws_calc_ext_summary_total_saps')).getText()).toEqual("1133539");
 
       });
 });
