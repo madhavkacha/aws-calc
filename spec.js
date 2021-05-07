@@ -12,7 +12,7 @@ describe('AWS Pricing Calculator', function() {
 
         myCommon.send().then(function () {
           console.log("URL: " + myCommon.url);
-          browser.driver.get(myCommon.url, 15000);
+          browser.driver.get(myCommon.url, 20000);
         });
       });
 
@@ -21,7 +21,7 @@ describe('AWS Pricing Calculator', function() {
           var e = element(by.id('current-group-label'));
           var EC = protractor.ExpectedConditions;
           var condition = EC.textToBePresentInElement(e, 'E2ETest');
-          browser.wait(condition, 10000, 'text is still not present').then(function() 
+          browser.wait(condition, 15000, 'text is still not present').then(function() 
           {
               e.getText().then(function (text) {
                   expect(text).toEqual('E2ETestInfo');
@@ -78,7 +78,7 @@ describe('AWS Pricing Calculator', function() {
 
         element(by.id('aws_calc_ext_summary_choose_url_action')).click();
 
-        browser.driver.sleep(15000);
+        browser.driver.sleep(20000);
 
         expect(element(by.id('aws_calc_ext_summary_total_instances')).getText()).toEqual("9");
         expect(element(by.id('aws_calc_ext_summary_total_storage')).getText()).toEqual("19409 GB");
