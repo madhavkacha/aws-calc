@@ -68,7 +68,7 @@ describe('AWS Pricing Calculator', function() {
 
       it('Summary correct?', function() {
 
-        browser.driver.get("https://dev.drwmi4wa6c6dl.amplifyapp.com/");
+        browser.driver.get("https://dev.drwmi4wa6c6dl.amplifyapp.com/index_no_stats.html");
 
         browser.driver.sleep(5000);
 
