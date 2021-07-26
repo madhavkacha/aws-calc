@@ -82,7 +82,7 @@ describe('AWS Pricing Calculator', function() {
 
         expect(element(by.id('aws_calc_ext_summary_total_instances')).getText()).toEqual("9");
         expect(element(by.id('aws_calc_ext_summary_total_storage')).getText()).toEqual("19409 GB");
-        expect(element(by.id('aws_calc_ext_summary_total_3yr')).getText()).toEqual("1299186.96 USD");
+        expect(element(by.id('aws_calc_ext_summary_total_3yr')).getText()).toEqual("1299186.64 USD");
         expect(element(by.id('aws_calc_ext_summary_total_saps')).getText()).toEqual("1133539");
 
       });
