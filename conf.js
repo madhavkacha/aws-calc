@@ -6,7 +6,8 @@ exports.config = {
     capabilities: {
       browserName: 'chrome',
       'goog:chromeOptions': {
-        args: ['--headless', '--lang=EN', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1920,1080']
+        args: ['--headless', '--lang=EN', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1920,1080'],
+        prefs: { intl: { accept_languages: "en-US,en;q=0.5" } }
       }
     }
 }
