@@ -4,6 +4,8 @@
 
 ## Step-by-Step Guide
 
+[![Watch the video](preview.gif)](https://github.com/frumania/aws-pricing-calculator-scripts-test/blob/main/preview.mp4?raw=true)
+
 ### Importer
 
 1. Download one of the excel sheets
@@ -38,9 +40,7 @@ You can either specify EC2, Storage or both!
 
 <br/>
 
-**Note:** Regardless of if you specify storage for an instance directly, the calulation is always split between EC2 and storage to highlight individual costs.
-
-[![Watch the video](preview.gif)](https://github.com/frumania/aws-pricing-calculator-scripts-test/blob/main/preview.mp4?raw=true)
+**Note:** Regardless of if you specify storage for an instance directly, the calculation is always split between EC2 and storage to highlight individual costs.
 
 ### Exporter
 
