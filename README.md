@@ -1,6 +1,6 @@
 # aws-pricing-calculator-scripts
 
-[![Build Status](https://app.travis-ci.com/frumania/aws-pricing-calculator-scripts-test.svg?branch=main)](https://app.travis-ci.com/frumania/aws-pricing-calculator-scripts-test)
+[![Node.js CI](https://github.com/frumania/aws-pricing-calculator-scripts-test/actions/workflows/node.js.yml/badge.svg)](https://github.com/frumania/aws-pricing-calculator-scripts-test/actions/workflows/node.js.yml)
 
 ## Step-by-Step Guide
 
