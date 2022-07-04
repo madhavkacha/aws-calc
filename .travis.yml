@@ -1,4 +1,7 @@
 sudo: required
+os: linux
+arch:
+  - arm64
 language: node_js
 node_js:
   - "14"
@@ -8,6 +11,7 @@ addons:
  
 before_script:
   - npm install -g protractor
+#  - npm install -g webdriver-manager
   - webdriver-manager update
   - webdriver-manager start &
   - sleep 5
