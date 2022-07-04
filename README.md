@@ -1,6 +1,6 @@
 # aws-pricing-calculator-scripts
 
-[![Build Status](https://travis-ci.com/frumania/aws-pricing-calculator-scripts-test.svg?branch=main)](https://travis-ci.com/frumania/aws-pricing-calculator-scripts-test)
+[![Build Status](https://app.travis-ci.com/frumania/aws-pricing-calculator-scripts-test.svg?branch=main)](https://app.travis-ci.com/frumania/aws-pricing-calculator-scripts-test)
 
 ## Step-by-Step Guide
 
@@ -45,8 +45,6 @@ You can either specify EC2, Storage or both!
 ### Exporter
 
 Add an existing pricing calculator link to fetch the data.
-
-<br/>
 
 **Note:** You can also use the native export feature of the pricing calculator.
 
